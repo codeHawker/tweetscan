@@ -1,0 +1,7 @@
+.tweet{
+    border: 1px solid grey;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #333;
+    color: #ddd;
+  }

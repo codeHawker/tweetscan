@@ -1,0 +1,7 @@
+.search-results{
+    display: block;
+    position: relative;
+    top: 140px;
+    overflow: auto;
+  }
+  

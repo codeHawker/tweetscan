@@ -1,0 +1,24 @@
+.search-stats {
+  width: 50%;
+  float: left;
+}
+
+.common-words-div {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.common-word {
+  display: inline-block;
+  min-width: 30px;
+  height: 20px;
+  background-color: #333;
+  color: white;
+  margin: 5px;
+  padding: 3px;
+}
+
+.stats-div{
+  margin: 40px 40px 100px 40px;
+}
