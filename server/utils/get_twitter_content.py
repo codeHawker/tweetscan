@@ -1,4 +1,4 @@
-from credentials import bearer_token
+from server.utils.credentials import bearer_token
 import requests
 import pandas as pd
 import json
@@ -106,7 +106,7 @@ def get_twitter_content(search_term):
 
 
 
-if __name__ == "__main__":
-    search_term = 'allblacks'
-    results = get_twitter_content(search_term)
-    print(json.dumps(results, indent=3))
+# if __name__ == "__main__":
+#     search_term = 'allblacks'
+#     results = get_twitter_content(search_term)
+#     print(json.dumps(results, indent=3))
