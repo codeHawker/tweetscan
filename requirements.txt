@@ -22,6 +22,7 @@ entrypoints==0.3
 filelock==3.0.12
 Flask==2.0.3
 Flask-Cors==3.0.10
+gunicorn==20.1.0
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 ipykernel==5.4.2
 ipython==7.19.0
