@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_cors import CORS
+# from flask_cors import CORS
 from server.blueprints import api, frontend
 
 def create_app():
@@ -15,8 +15,8 @@ def create_app():
         app.config.from_object("server.config.DevelopmentConfig")
 
 
-    cors = CORS()
-    cors.init_app(app)
+    # cors = CORS()
+    # cors.init_app(app)
 
     app.register_blueprint(api.bp)
     app.register_blueprint(frontend.bp)
