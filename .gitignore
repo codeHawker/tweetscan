@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/tweetscan-env
 
 # testing
 /coverage
@@ -17,6 +18,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+__pycache__
+
+# credentials
+credentials.py
+
+
 
 npm-debug.log*
 yarn-debug.log*
