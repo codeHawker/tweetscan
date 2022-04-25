@@ -1,10 +1,9 @@
 from server.utils.credentials import bearer_token
+from server.utils.stop_words import stopwords
 import requests
 import pandas as pd
 import re
 from collections import Counter
-from nltk.corpus import stopwords
-
 
 
 search_url = "https://api.twitter.com/2/tweets/search/recent"
@@ -79,8 +78,7 @@ def get_most_common_words(tweet_df, n=20):
 
 
 def extract_words(tweet):
-    stop_words = set(stopwords.words('english'))
-    stop_words.update(["https", "co", "com"])
+    stop_words = stopwords
     words = re.sub("[^\w]", " ",  tweet).split()
     cleaned_words = [w.lower() for w in words if w not in stop_words] 
     return cleaned_words
