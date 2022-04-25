@@ -5,12 +5,11 @@
 /.pnp
 .pnp.js
 /tweetscan-env
-
 # testing
 /coverage
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
@@ -21,7 +20,7 @@
 __pycache__
 
 # credentials
-credentials.py
+# credentials.py
 
 
 
