@@ -42,7 +42,7 @@ class App extends React.Component {
   }
 
   apiSearch(searchTerm) {
-    return fetch(`http://localhost:5000/api/${searchTerm}`)
+    return fetch(`/api/${searchTerm}`)
       .then(response => { return response.json() })
   }
 

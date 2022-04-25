@@ -1,7 +1,6 @@
 from server.utils.credentials import bearer_token
 import requests
 import pandas as pd
-import json
 import re
 from collections import Counter
 from nltk.corpus import stopwords
