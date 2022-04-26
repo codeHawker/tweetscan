@@ -1,17 +1,22 @@
 .search-bar-div{
-    padding: 1px;
+    padding: 5px;
     background-color: white;
+    padding: 10px;
   
   }
   
   form.search-bar{
-    margin: 20px;
-    justify-content: center;
+    display: block;
+    position: relative;
+    margin-right: 90px;    
+
   }
   
   /* Style the search field */
   form.search-bar input[type=text] {
-    width: 80%;
+    box-sizing:border-box;
+    width: 100%;
+    display: block;
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -22,8 +27,13 @@
     /* Style the search button */
 
   form.search-bar button {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 100%;
+    margin-left: 10px;
+    width: 80px;
     padding: 10px;
-    margin-left: 20px;
     font-size: 17px;
     border: 1px solid grey;
     background: #f1f1f1;
