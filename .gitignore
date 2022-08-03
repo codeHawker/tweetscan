@@ -11,6 +11,7 @@
 # production
 # /build
 
+
 # misc
 .DS_Store
 .env.local
@@ -20,7 +21,7 @@
 __pycache__
 
 # credentials
-# credentials.py
+# recredentials.py
 
 
 
