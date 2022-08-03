@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build
 
 
 # misc
@@ -21,8 +21,7 @@
 __pycache__
 
 # credentials
-# recredentials.py
-
+server/utils/credentials.py
 
 
 npm-debug.log*
