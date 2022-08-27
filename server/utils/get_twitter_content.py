@@ -1,14 +1,16 @@
-from server.utils.credentials import bearer_token
 from server.utils.stop_words import stopwords
 import requests
 import pandas as pd
 import re
+import os
 from collections import Counter
-
 
 search_url = "https://api.twitter.com/2/tweets/search/recent"
 
-
+try:
+    bearer_token = os.environ['TWITTER_BEARER_TOKEN']
+except:
+    raise Exception("Please set environment variable $TWITTER_BEARER_TOKEN")
 
 def bearer_oauth(r):
     """
@@ -100,10 +102,3 @@ def get_twitter_content(search_term):
         'most_liked': most_liked, 
         'top_words': top_words
         }
-
-
-
-# if __name__ == "__main__":
-#     search_term = 'allblacks'
-#     results = get_twitter_content(search_term)
-#     print(json.dumps(results, indent=3))
