@@ -55,7 +55,8 @@ class App extends React.Component {
   }
 
   render() {
-    let searchResults
+    let searchResults = <h2 className='searching-text'>Try searching any term to see whats being said ...</h2>
+
     if (this.state.searchResults) {
       searchResults = <SearchResults searchResults={this.state.searchResults} />
     }
