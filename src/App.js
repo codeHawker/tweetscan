@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showAboutBox: false,
+      showAboutBox: true,
       seachState: 'empty'
     }
     this.handleSearch = this.handleSearch.bind(this)
